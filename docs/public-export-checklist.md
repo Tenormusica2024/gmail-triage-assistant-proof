@@ -7,9 +7,9 @@ Use this checklist before moving this proof slice into a standalone public repos
 - The demo runs with only `samples/mailbox.json` and `samples/personal_rules.json`.
 - Gmail API setup remains optional.
 - No real Gmail token, OAuth client secret, message ID, thread ID, sender, subject, or body is included.
-- No private GitHub Issue content is included.
+- No private issue or support-ticket content is included.
 - No LinkedIn DM content is included.
-- No LLMWIKI / curiosity-wiki output is included.
+- No private knowledge-base output is included.
 - No local absolute path is required to run the demo.
 - Default behavior is still no-send / no-modify.
 - Reply output is draft-only.
@@ -50,6 +50,7 @@ Then, inside the fresh public repository:
 ```powershell
 python -m pytest tests -q
 python -X utf8 run_demo.py
+python scripts/check_public_boundary.py
 ```
 
 ## Pre-export commands
@@ -57,6 +58,7 @@ python -X utf8 run_demo.py
 ```powershell
 python -m pytest tests -q
 python -X utf8 run_demo.py
+python scripts/check_public_boundary.py
 ```
 
 If exporting from inside the private repository, copy only this proof directory into a fresh public repository rather than publishing the private repository history.

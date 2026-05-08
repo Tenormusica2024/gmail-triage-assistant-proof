@@ -118,7 +118,7 @@ The default mode never sends email, marks mail as read, archives mail, changes l
 
 ## Public/private boundary
 
-This directory is designed as a public-safe slice. It should not include real Gmail messages, tokens, local private paths, private issue contents, LinkedIn messages, or LLMWIKI/curiosity-wiki data.
+This directory is designed as a public-safe slice. It should not include real Gmail messages, tokens, local private paths, private issue contents, LinkedIn messages, or private knowledge-base data.
 
 See:
 

@@ -18,9 +18,9 @@ This proof slice is sample-first and public-safe by default.
 - Real Gmail message IDs or thread IDs
 - Real senders, subjects, or message bodies
 - LinkedIn DM contents
-- Private GitHub Issue contents
+- Private issue or support-ticket contents
 - Local scheduler state
-- LLMWIKI / curiosity-wiki private outputs
+- Private knowledge-base outputs
 - Local absolute paths that reveal private environment details
 
 ## Default safety model
