@@ -10,7 +10,7 @@ This repository demonstrates a small but important AI-agent pattern:
 mailbox-like input -> triage -> draft-only suggestion -> human confirmation queue
 ```
 
-It is meant as a portfolio proof for:
+It is meant as a reusable proof for:
 
 - AI secretary workflow design
 - human-in-the-loop automation
@@ -27,9 +27,9 @@ Review these first:
 2. `src/triage_engine.py` — how messages are classified without external side effects
 3. `tests/` — safety and behavior checks
 4. `docs/privacy-boundary.md` — what must not be published
-5. `docs/portfolio-copy.md` — how to describe this proof in portfolio or proposal contexts
+5. `docs/showcase-copy.md` — how to describe this proof in public demo contexts
 
-## Portfolio value
+## Public proof value
 
 This proof shows an AI secretary pattern for inbox operations:
 
@@ -124,4 +124,4 @@ See:
 
 - `docs/privacy-boundary.md`
 - `docs/public-export-checklist.md`
-- `docs/portfolio-copy.md`
+- `docs/showcase-copy.md`
