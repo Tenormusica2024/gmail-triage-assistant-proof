@@ -32,6 +32,20 @@ def test_reply_draft_is_draft_only():
         assert item["draft"]["send_ready"] is False
 
 
+def test_confirmation_queue_is_deterministic_and_sample_based():
+    messages = load_json(ROOT / "samples" / "mailbox.json")
+    rules = load_json(ROOT / "samples" / "personal_rules.json")
+    first = build_report(messages, rules)["confirmation_queue"]
+    second = build_report(messages, rules)["confirmation_queue"]
+
+    assert first == second
+    assert [item["created_at"] for item in first] == [
+        "2026-05-08T08:10:00+09:00",
+        "2026-05-08T09:30:00+09:00",
+        "2026-05-08T10:20:00+09:00",
+    ]
+
+
 def test_markdown_mentions_no_send_safety():
     messages = load_json(ROOT / "samples" / "mailbox.json")
     rules = load_json(ROOT / "samples" / "personal_rules.json")

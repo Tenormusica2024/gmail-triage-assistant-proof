@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime, timezone
 from typing import Any
 import hashlib
 
@@ -27,6 +26,7 @@ def build_confirmation_item(message: dict[str, Any], classification: dict[str, A
     source = "sample-mailbox"
     reason = str(classification.get("reason") or "Needs human confirmation")
     action = str(classification.get("recommended_action") or "review")
+    created_at = str(message.get("received_at") or "sample-fixture")
     item = QueueItem(
         id=stable_queue_id(source, message_id, title),
         source=source,
@@ -42,5 +42,5 @@ def build_confirmation_item(message: dict[str, Any], classification: dict[str, A
         "title": item.title,
         "reason": item.reason,
         "recommended_action": item.recommended_action,
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": created_at,
     }
