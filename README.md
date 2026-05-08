@@ -2,6 +2,21 @@
 
 A public-safe proof slice for an AI secretary that triages mailbox-like inputs without requiring Gmail API access.
 
+## One-minute summary
+
+This repository demonstrates a small but important AI-agent pattern:
+
+```text
+mailbox-like input -> triage -> draft-only suggestion -> human confirmation queue
+```
+
+It is meant as a portfolio proof for:
+
+- AI secretary workflow design
+- human-in-the-loop automation
+- safe action boundaries before external side effects
+- practical Python implementation with tests and synthetic fixtures
+
 ## For reviewers
 
 This is a compact proof asset for **AI secretary / agent operations** work.
@@ -24,6 +39,17 @@ This proof shows an AI secretary pattern for inbox operations:
 It is designed to demonstrate **AI agent safety boundaries** rather than a full Gmail product.
 
 The key point is not Gmail integration itself. The proof is that agent output can be routed through a safe decision boundary before it becomes an external action.
+
+## Why this is useful
+
+Many AI-assistant demos jump directly from "the model understood the message" to "the model did something." This proof intentionally inserts a safer middle layer:
+
+- classify the message
+- explain the reason
+- draft a possible reply
+- queue the action for human confirmation
+
+That makes the pattern reusable for email, support inboxes, task intake, CRM follow-up, and other agent workflows where external actions should not happen automatically.
 
 ## Use cases demonstrated
 
@@ -49,6 +75,17 @@ sample mailbox
 - Pushes action-worthy items into a confirmation queue before any external action.
 - Keeps the default demo **no-send / no-modify / no Gmail API**.
 - Keeps private mailbox data out of the public proof by using synthetic fixtures.
+
+## Scope boundaries
+
+This is not:
+
+- a production Gmail client
+- an autonomous email sender
+- a mailbox scraping tool
+- a hosted SaaS demo
+
+It is a focused proof of the triage and confirmation pattern.
 
 ## Quick demo
 

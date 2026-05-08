@@ -80,7 +80,7 @@
       "title": "Payment failed for your workspace",
       "reason": "urgent signal: payment failed, suspended tomorrow",
       "recommended_action": "review_official_console",
-      "created_at": "2026-05-08T04:42:05.261792+00:00"
+      "created_at": "2026-05-08T04:44:03.446258+00:00"
     },
     {
       "id": "74e660808d71",
@@ -89,7 +89,7 @@
       "title": "Interview schedule adjustment",
       "reason": "review signal: confirm, interview, schedule",
       "recommended_action": "review_and_optionally_reply",
-      "created_at": "2026-05-08T04:42:05.261792+00:00"
+      "created_at": "2026-05-08T04:44:03.446258+00:00"
     },
     {
       "id": "f41a4d3f47f4",
@@ -98,7 +98,7 @@
       "title": "New sign-in detected",
       "reason": "urgent signal: new sign-in, security",
       "recommended_action": "review_official_console",
-      "created_at": "2026-05-08T04:42:05.261792+00:00"
+      "created_at": "2026-05-08T04:44:03.446258+00:00"
     }
   ],
   "reply_drafts": [
