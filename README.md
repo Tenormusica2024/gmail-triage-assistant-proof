@@ -27,6 +27,7 @@ Review these first:
 2. `src/triage_engine.py` — how messages are classified without external side effects
 3. `tests/` — safety and behavior checks
 4. `docs/privacy-boundary.md` — what must not be published
+5. `docs/portfolio-copy.md` — how to describe this proof in portfolio or proposal contexts
 
 ## Portfolio value
 
@@ -123,3 +124,4 @@ See:
 
 - `docs/privacy-boundary.md`
 - `docs/public-export-checklist.md`
+- `docs/portfolio-copy.md`
