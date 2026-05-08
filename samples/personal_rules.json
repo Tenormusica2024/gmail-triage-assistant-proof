@@ -1,0 +1,27 @@
+{
+  "protected_senders": [
+    "billing@example.com",
+    "security@example.com"
+  ],
+  "low_priority_senders": [
+    "news@example.com"
+  ],
+  "urgent_keywords": [
+    "payment failed",
+    "suspended tomorrow",
+    "new sign-in",
+    "security"
+  ],
+  "review_keywords": [
+    "confirm",
+    "interview",
+    "schedule",
+    "reply",
+    "deadline"
+  ],
+  "reply_draft_keywords": [
+    "could you confirm",
+    "please suggest",
+    "interview"
+  ]
+}

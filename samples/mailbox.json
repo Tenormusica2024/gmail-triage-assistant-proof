@@ -1,0 +1,34 @@
+[
+  {
+    "id": "msg-001",
+    "sender": "Cloud Billing <billing@example.com>",
+    "subject": "Payment failed for your workspace",
+    "snippet": "Your payment failed and service may be suspended tomorrow unless you update billing.",
+    "body": "Your payment failed and service may be suspended tomorrow. Please update billing from the official console.",
+    "received_at": "2026-05-08T08:10:00+09:00"
+  },
+  {
+    "id": "msg-002",
+    "sender": "Recruiter Example <recruiter@example.com>",
+    "subject": "Interview schedule adjustment",
+    "snippet": "Could you confirm whether next Tuesday afternoon works for a short interview?",
+    "body": "Could you confirm whether next Tuesday afternoon works for a short interview? If another slot is better, please suggest alternatives.",
+    "received_at": "2026-05-08T09:30:00+09:00"
+  },
+  {
+    "id": "msg-003",
+    "sender": "Newsletter <news@example.com>",
+    "subject": "Weekly AI tools roundup",
+    "snippet": "Here are ten new AI tools to try this week.",
+    "body": "Weekly digest of AI tools, links, promotions, and community highlights.",
+    "received_at": "2026-05-08T10:00:00+09:00"
+  },
+  {
+    "id": "msg-004",
+    "sender": "Security Notice <security@example.com>",
+    "subject": "New sign-in detected",
+    "snippet": "A new sign-in was detected. Review this activity if it was not you.",
+    "body": "A new sign-in was detected from a new device. Review this activity from the official account security page if it was not you.",
+    "received_at": "2026-05-08T10:20:00+09:00"
+  }
+]

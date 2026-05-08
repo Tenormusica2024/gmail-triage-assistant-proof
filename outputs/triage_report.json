@@ -1,0 +1,117 @@
+{
+  "summary": {
+    "messages_scanned": 4,
+    "counts": {
+      "urgent": 2,
+      "review": 1,
+      "low_priority": 1
+    },
+    "confirmation_queue_count": 3,
+    "reply_draft_count": 1,
+    "safety": "sample-first / draft-only / no-send / no-modify"
+  },
+  "items": [
+    {
+      "message": {
+        "id": "msg-001",
+        "sender": "Cloud Billing <billing@example.com>",
+        "subject": "Payment failed for your workspace",
+        "received_at": "2026-05-08T08:10:00+09:00"
+      },
+      "classification": {
+        "category": "urgent",
+        "severity": "high",
+        "reason": "urgent signal: payment failed, suspended tomorrow",
+        "recommended_action": "review_official_console",
+        "reply_draft_candidate": false
+      }
+    },
+    {
+      "message": {
+        "id": "msg-002",
+        "sender": "Recruiter Example <recruiter@example.com>",
+        "subject": "Interview schedule adjustment",
+        "received_at": "2026-05-08T09:30:00+09:00"
+      },
+      "classification": {
+        "category": "review",
+        "severity": "medium",
+        "reason": "review signal: confirm, interview, schedule",
+        "recommended_action": "review_and_optionally_reply",
+        "reply_draft_candidate": true
+      }
+    },
+    {
+      "message": {
+        "id": "msg-003",
+        "sender": "Newsletter <news@example.com>",
+        "subject": "Weekly AI tools roundup",
+        "received_at": "2026-05-08T10:00:00+09:00"
+      },
+      "classification": {
+        "category": "low_priority",
+        "severity": "low",
+        "reason": "low-priority sender or newsletter-like content",
+        "recommended_action": "read_later_or_skip",
+        "reply_draft_candidate": false
+      }
+    },
+    {
+      "message": {
+        "id": "msg-004",
+        "sender": "Security Notice <security@example.com>",
+        "subject": "New sign-in detected",
+        "received_at": "2026-05-08T10:20:00+09:00"
+      },
+      "classification": {
+        "category": "urgent",
+        "severity": "high",
+        "reason": "urgent signal: new sign-in, security",
+        "recommended_action": "review_official_console",
+        "reply_draft_candidate": false
+      }
+    }
+  ],
+  "confirmation_queue": [
+    {
+      "id": "10e4175ec408",
+      "source": "sample-mailbox",
+      "message_id": "msg-001",
+      "title": "Payment failed for your workspace",
+      "reason": "urgent signal: payment failed, suspended tomorrow",
+      "recommended_action": "review_official_console",
+      "created_at": "2026-05-08T04:42:05.261792+00:00"
+    },
+    {
+      "id": "74e660808d71",
+      "source": "sample-mailbox",
+      "message_id": "msg-002",
+      "title": "Interview schedule adjustment",
+      "reason": "review signal: confirm, interview, schedule",
+      "recommended_action": "review_and_optionally_reply",
+      "created_at": "2026-05-08T04:42:05.261792+00:00"
+    },
+    {
+      "id": "f41a4d3f47f4",
+      "source": "sample-mailbox",
+      "message_id": "msg-004",
+      "title": "New sign-in detected",
+      "reason": "urgent signal: new sign-in, security",
+      "recommended_action": "review_official_console",
+      "created_at": "2026-05-08T04:42:05.261792+00:00"
+    }
+  ],
+  "reply_drafts": [
+    {
+      "message_id": "msg-002",
+      "draft": {
+        "draft_only": true,
+        "send_ready": false,
+        "to_hint": "Recruiter Example <recruiter@example.com>",
+        "subject": "Re: Interview schedule adjustment",
+        "body": "ご連絡ありがとうございます。\n\n日程と依頼内容を確認しました。候補時間を確認のうえ、折り返しご連絡します。",
+        "safety_note": "This is a draft-only suggestion. Review before sending."
+      }
+    }
+  ]
+}
