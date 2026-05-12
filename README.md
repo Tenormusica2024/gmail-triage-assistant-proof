@@ -2,6 +2,8 @@
 
 A public-safe proof slice for an AI secretary that triages mailbox-like inputs without requiring Gmail API access.
 
+![Gmail Triage Assistant Proof hero: mailbox triage to draft-only suggestions to human confirmation](docs/assets/gmail-triage-assistant-hero.png)
+
 ## One-minute summary
 
 This repository demonstrates a small but important AI-agent pattern:
